@@ -4,7 +4,7 @@
 #include <map>
 
 #include "picosha2.h"
-#include "atom.h"
+#include "memory.h"
 
 
 class cerebrum
@@ -12,13 +12,13 @@ class cerebrum
     public:
         cerebrum();
         ~cerebrum();
-        Atom* getAtom(std::string hash);
-        std::vector<Atom*> getAtomsRelatedTo(std::vector<std::string> relatedLinks);
+        Memory* getAtom(std::string hash);
+        std::vector<Memory*> getAtomsRelatedTo(std::vector<std::string> relatedLinks);
 
     protected:
-        std::map<std::string, Atom*> atoms;
+        std::map<std::string, Memory*> atoms;
         // Links are like tags but renamed for symbolism
-        std::map<std::string, std::vector<Atom*>> links;
+        std::map<std::string, std::vector<Memory*>> links;
 
     private:
 };

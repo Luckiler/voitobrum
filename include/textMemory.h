@@ -7,13 +7,13 @@
 
 #include <string>
 
-#include "atom.h"
+#include "memory.h"
 
-class AtomText : public Atom
-{
+class textMemory : public Memory {
 public:
-    AtomText();
-    ~AtomText();
+    textMemory();
+
+    ~textMemory();
 
 protected:
     // TODO optimise for huge chunks of text
