@@ -1,17 +1,15 @@
+
 #include "memory.h"
 
-Memory::Memory()
-{
+memory::memory() {
     this->type = UNDEFINED;
 }
 
-Memory::~Memory()
-{
+memory::~memory() {
     //dtor
 }
 
 
-MemoryType Memory::getType()
-{
+MemoryType memory::getType() {
     return this->type;
 }

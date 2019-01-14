@@ -1,11 +1,14 @@
-#include "cerebrum.h"
 
-cerebrum::cerebrum()
-{
+#include <cerebrum.h>
+
+cerebrum::cerebrum() {
     //ctor
 }
 
-cerebrum::~cerebrum()
-{
+cerebrum::~cerebrum() {
     //dtor
+}
+
+cerebrum::cerebrum(std::map<std::string, memory *> memories) {
+
 }

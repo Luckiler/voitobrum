@@ -9,7 +9,7 @@
 
 #include "memory.h"
 
-class textMemory : public Memory {
+class textMemory : public memory {
 public:
     textMemory();
 

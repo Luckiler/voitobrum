@@ -4,6 +4,6 @@
 
 #include <textMemory.h>
 
-textMemory::textMemory() : Memory() {
+textMemory::textMemory() : memory() {
     this->type = TEXT;
 }

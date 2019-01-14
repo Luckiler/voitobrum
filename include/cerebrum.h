@@ -5,22 +5,26 @@
 
 #include "picosha2.h"
 #include "memory.h"
+#include "tag.h"
 
+typedef std::map<std::string, memory *> memory_map;
 
-class cerebrum
-{
-    public:
-        cerebrum();
-        ~cerebrum();
-        Memory* getAtom(std::string hash);
-        std::vector<Memory*> getAtomsRelatedTo(std::vector<std::string> relatedLinks);
+class cerebrum {
+public:
+    cerebrum();
 
-    protected:
-        std::map<std::string, Memory*> atoms;
-        // Links are like tags but renamed for symbolism
-        std::map<std::string, std::vector<Memory*>> links;
+    cerebrum(std::map<std::string, memory *> memories);
 
-    private:
+    ~cerebrum();
+
+    memory *getMemory(std::string hash);
+
+protected:
+    // All the memories
+    memory_map memories;
+    // All the registered tags
+    std::vector<tag> tags;
+
 };
 
 #endif // CEREBRUM_H
