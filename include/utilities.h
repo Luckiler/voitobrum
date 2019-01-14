@@ -5,8 +5,11 @@
 #ifndef VOITOBRUM_UTILITIES_H
 #define VOITOBRUM_UTILITIES_H
 
-bool sdl_initialized = false;
+#define DEFAULT_WINDOW_HEIGHT 480
+#define DEFAULT_WINDOW_WIDTH 640
 
-void init_sdl();
+extern bool sdl_initialized;
+
+extern void init_sdl();
 
 #endif //VOITOBRUM_UTILITIES_H
