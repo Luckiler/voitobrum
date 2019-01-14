@@ -23,3 +23,7 @@ v_window::v_window() {
         }
     }
 }
+
+v_window::~v_window() {
+    SDL_DestroyWindow(this->window);
+}

@@ -12,6 +12,7 @@
 class v_window {
 public:
     v_window();
+    ~v_window();
 protected:
     SDL_Window *window;
     SDL_Surface *screenSurface;
