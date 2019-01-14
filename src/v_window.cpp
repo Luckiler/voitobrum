@@ -7,6 +7,9 @@
 #include "utilities.h"
 
 v_window::v_window() {
+    if (!sdl_initialized) {
+        init_sdl();
+    }
     this->window = SDL_CreateWindow("SDL Tutorial", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
                                     DEFAULT_WINDOW_WIDTH,
                                     DEFAULT_WINDOW_HEIGHT, SDL_WINDOW_SHOWN);
