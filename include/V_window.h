@@ -9,10 +9,10 @@
 
 // virtual window class.
 // Manages all SDL window related things
-class v_window {
+class V_window {
 public:
-    v_window();
-    ~v_window();
+    V_window();
+    ~V_window();
 protected:
     SDL_Window *window;
     SDL_Surface *screenSurface;

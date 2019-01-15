@@ -7,13 +7,13 @@
 
 #include <string>
 
-#include "memory.h"
+#include "Memory.h"
 
-class textMemory : public memory {
+class TextMemory : public Memory {
 public:
-    textMemory();
+    TextMemory();
 
-    ~textMemory();
+    ~TextMemory();
 
 protected:
     // TODO optimise for huge chunks of text

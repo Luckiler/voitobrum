@@ -5,11 +5,11 @@
 #include <string>
 #include "memory_type.h"
 
-class memory {
+class Memory {
 public:
-    memory();
+    Memory();
 
-    ~memory();
+    ~Memory();
 
     // Gets the type of this memory
     MemoryType getType();

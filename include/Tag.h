@@ -7,7 +7,7 @@
 
 #include <cstddef>
 
-class tag {
+class Tag {
 protected:
     size_t number_of_tagged_memories;
 };
