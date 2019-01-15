@@ -13,6 +13,8 @@ class V_window {
 public:
     V_window();
     ~V_window();
+
+    void run();
 protected:
     SDL_Window *window;
     SDL_Surface *screenSurface;

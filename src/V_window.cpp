@@ -18,11 +18,16 @@ V_window::V_window() {
         } else {
             this->screenSurface = SDL_GetWindowSurface(this->window);
         }
-        
     }
 }
 
 V_window::~V_window() {
     SDL_DestroyWindow(this->window);
     SDL_Quit();
+}
+
+void V_window::run() {
+    SDL_FillRect(this->screenSurface, nullptr, SDL_MapRGB(this->screenSurface->format, 0x00, 0xFF, 0x00));
+    SDL_UpdateWindowSurface(this->window);
+    SDL_Delay(2000);
 }
