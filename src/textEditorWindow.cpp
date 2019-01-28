@@ -4,7 +4,7 @@
 
 #include <textEditorWindow.h>
 
-textEditorWindow::textEditorWindow() : V_window() {
+textEditorWindow::textEditorWindow() {
     currentBuffer = new charBuffer();
     bufferStart = currentBuffer;
     bufferEnd = currentBuffer;

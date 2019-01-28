@@ -5,8 +5,6 @@
 #ifndef VOITOBRUM_TEXTEDITORWINDOW_H
 #define VOITOBRUM_TEXTEDITORWINDOW_H
 
-#include "V_window.h"
-
 typedef struct charBufferStruct {
     charBufferStruct* previous = nullptr;
     char value = '\0';
@@ -15,7 +13,7 @@ typedef struct charBufferStruct {
 
 // A window that edits text.
 // It will be the main editor for things
-class textEditorWindow: public V_window {
+class textEditorWindow {
 public:
     textEditorWindow();
 protected:
@@ -23,7 +21,7 @@ protected:
     charBuffer * bufferEnd;
     charBuffer * currentBuffer;
 
-    void addCharToBuffer(const char c);
+    void addCharToBuffer(char c);
 };
 
 
